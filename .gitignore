@@ -1,13 +1,11 @@
-__pycache__/
-.ipynb_checkpoints/
-*.pyc
-*.pkl
+# Ignore large data & model files
+*.pt
+*.bin
 *.h5
 *.csv
 *.log
 models/
 results/
 plots/
-.env
 .cache/
-.DS_Store
+
