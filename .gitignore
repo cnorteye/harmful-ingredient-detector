@@ -4,8 +4,30 @@
 *.h5
 *.csv
 *.log
+.cache/
+
+# DVC-tracked folders
 models/
 results/
 plots/
-.cache/
+data/
 
+# Don't ignore notebooks
+# *.ipynb  ← DO NOT add this
+
+# But DO ignore Jupyter internals
+.ipynb_checkpoints/
+
+# Python environment files
+.env
+*.env
+*.egg-info/
+venv/
+__pycache__/
+*.pyc
+
+# DVC-generated lock file
+dvc.lock
+
+# VS Code project settings
+.vscode/
