@@ -1,33 +1,53 @@
-# Ignore large data & model files
-*.pt
-*.bin
-*.h5
-*.csv
-*.log
-.cache/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
-# DVC-tracked folders
+# Logs and system files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+*.env
+*.venv
+
+# Ignore data, models, and results folders
+data/
 models/
 results/
 plots/
-data/
 
-# Don't ignore notebooks
-# *.ipynb  ← DO NOT add this
+# DVC cache and metadata (except .dvc files)
+.cache/
+*.dvc.lock
+*.dvc/tmp/
 
-# But DO ignore Jupyter internals
-.ipynb_checkpoints/
+# Large file types
+*.csv
+*.tsv
+*.jsonl
+*.h5
+*.hdf5
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+*.npy
+*.npz
 
-# Python environment files
-.env
-*.env
-*.egg-info/
-venv/
-__pycache__/
-*.pyc
-
-# DVC-generated lock file
-dvc.lock
-
-# VS Code project settings
+# VSCode settings (optional)
 .vscode/
+
+# MacOS system files
+*.DS_Store
+
+# Windows system files
+ehthumbs.db
+Icon?
