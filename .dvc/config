@@ -1,0 +1,9 @@
+[core]
+    remote = dropbox_remote
+['remote "origin"']
+    url = https://github.com/cnorteye/harmful-ingredient-detector.git
+['remote "gdrive_remote"']
+    url = gdrive://1Vd_w1i-NfP9Q7-s1T0y7TSu29y6oJely
+    gdrive_use_service_account = false
+['remote "dropbox_remote"']
+    url = ../dropbox
